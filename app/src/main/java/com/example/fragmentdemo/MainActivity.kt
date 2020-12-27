@@ -9,13 +9,14 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import com.example.fragmentdemo.gamefragment.GameFragment
+import com.example.fragmentdemo.watch.watchFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     val fragment1 =  GameFragment()
     val fragment2 = BlankFragment2()
     val fragment3 = BlankFragment1()
-    val fragment4 = BlankFragment1()
+    val fragment4 = watchFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                         .commit()
                 R.id.watch ->
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout,fragment3)
+                        .replace(R.id.frameLayout,fragment4)
                         .commit()
             }
             true
