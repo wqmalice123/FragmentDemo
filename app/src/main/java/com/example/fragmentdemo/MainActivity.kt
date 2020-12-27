@@ -41,9 +41,9 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frameLayout,fragment3)
                         .commit()
-                R.id.weather ->
+                R.id.watch ->
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout,fragment4)
+                        .replace(R.id.frameLayout,fragment3)
                         .commit()
             }
             true
