@@ -32,7 +32,7 @@ class WatchViewModel : ViewModel() {
             override fun run() {
                 if (running) {
                     val sec = seconds .value?:0
-                    _seconds.value = sec + 1
+                    _seconds.postValue (sec + 1)
                 }
                 handler.postDelayed(this, 1000)
             }

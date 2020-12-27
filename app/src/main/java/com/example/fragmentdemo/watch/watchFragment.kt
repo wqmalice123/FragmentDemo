@@ -38,7 +38,7 @@ class watchFragment : Fragment() {
             val minutes = (it%3600)/60
             val secs = it % 60
             if (textView_time != null) {
-                textView_time.text = String.format("%02:%02:%02",hours,minutes,secs)
+                textView_time.text = String.format("%02d:%02d:%02d",hours,minutes,secs)
             }
         })
         val button_start = view?.findViewById<Button>(R.id.button_start)
