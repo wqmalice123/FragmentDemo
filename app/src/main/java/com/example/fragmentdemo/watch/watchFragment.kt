@@ -17,6 +17,7 @@ class watchFragment : Fragment() {
     companion object {
         fun newInstance() = watchFragment()
     }
+    //嘻嘻嘻嘻
 
     private lateinit var viewModel: WatchViewModel
 
